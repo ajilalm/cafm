@@ -41,6 +41,9 @@
     <!-- <link href="css/style.css" rel="stylesheet"> commented -->
     <link href="css/stylepro.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <!-- fontawesome-6.2.0 -->
+    <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/fontawesome.min.css" />      
+    <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/all.min.css" /> 
     <!-- <link href="css/sidebarpro.css" rel="stylesheet"> -->
     <!-- We use those styles to show code examples, you should remove them in your application.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
@@ -188,7 +191,7 @@
             </a></li>
         </ul>
     </div>
-    <div class="sidebar sidebar-light sidebar-lg sidebar-end sidebar-overlaid hide" id="aside">
+    <div class="sidebar sidebar-light customeoff sidebar-lg sidebar-end sidebar-overlaid hide" id="aside">
         <div class="sidebar-header bg-transparent p-0">
             <ul class="nav nav-underline nav-underline-primary" role="tablist">
                 <li class="nav-item" role="presentation"><a class="nav-link active" data-coreui-toggle="tab" href="#timeline" role="tab" aria-selected="true">
@@ -379,6 +382,19 @@
           </div>
         </div>
     </div>
+    <!-- asset add -->
+    <div class="sidebar sidebar-light customeoff sidebar-lg sidebar-end sidebar-overlaid hide" id="aside2">
+      <div class="sidebar-header bg-transparent p-0">
+          <h5 class="modal-title" id="#gridSystemModal1">Add New Task</h5>
+          <button class="sidebar-close" type="button" data-coreui-close="sidebar">
+            <i class="fa-regular fa-xmark"></i>
+          </button>
+      </div>
+      <!-- Tab panes-->
+        add asset
+    </div>
+
+    <!-- asset end -->
     <div class="wrapper d-flex flex-column min-vh-100 bg-light dark:bg-transparent">
       <header class="header header-sticky mb-4">
           <div class="container-fluid">
@@ -1123,7 +1139,13 @@
                                     <div class="input-group-text"><i class="fa fa-search"></i></div>
                                   </div>
                                 </div>
+                                <div class="col-auto ms-auto">
+                                  <a class="btn btn-secondary" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()">
+                                      <i class="fa fa-plus"></i> Add new Asset
+                                  </a>
+                                </div>
                               </form>
+                              
                             </div>
                             <div class="table-responsive">
                               <table class="table">
@@ -1157,6 +1179,15 @@
                                           <td>User1</td>
                                           <td>Available</td>
                                       </tr>
+                                      <tr>
+                                          <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRto60ZWP6xuGidvyXT5fDmD9IQG72PsmMp0mAEyNQNyOrrQIC88n7qmZLhaK9GvQ7phWzFDYWcCYbT8z8pKw7WnGPcZan7N_yvsTfQ0emIz2SWkDPKWX7Krkugfuv46JQmhw&usqp=CAc" width=100></td>
+                                          <td>MN0017</td>
+                                          <td>Monitor</td>
+                                          <td>Electronics</td>
+                                          <td>Developer Room</td>
+                                          <td>User B</td>
+                                          <td>Available</td>
+                                      </tr>
                                   </tbody>
                               </table>
                             </div>
@@ -1167,6 +1198,7 @@
           </div>
         </div>
       </div>
+      <div class="fade offcanvas-backdrop show d-none"></div>
       <footer class="footer">
         <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
@@ -1182,6 +1214,7 @@
     <script src="vendors/fullcalendar/index.global.js"></script>
     <script src="vendors/fullcalendar/fullcalendar-example.js"></script>
     <script src="js/main.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script>
       if (document.body.classList.contains('dark-theme')) {
         var element = document.getElementById('btn-dark-theme');
