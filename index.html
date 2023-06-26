@@ -1222,7 +1222,10 @@
                                                   <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
                                                 </svg>
                                               </button>
-                                              <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped=""><a class="dropdown-item" href="#">Info</a><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                              <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
+                                                  <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a>
+                                                  <a class="dropdown-item" href="#">Edit</a>
+                                                  <a class="dropdown-item text-danger" href="#">Delete</a></div>
                                           </div>
                                       </td>
                                   </tr>
@@ -1241,7 +1244,10 @@
                                                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
                                               </svg>
                                             </button>
-                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped=""><a class="dropdown-item" href="#">Info</a><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
+                                              <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#receivingscreen">Receive</a>
+                                              <a class="dropdown-item" href="#">Edit</a>
+                                              <a class="dropdown-item text-danger" href="#">Delete</a></div>
                                         </div>
                                       </td>
                                   </tr>
@@ -1344,7 +1350,7 @@
                               </div>
                               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                                   <div class="row">
-                                    <div class="card me-2" style="width: 18rem;">
+                                    <div class="card me-2 mb-2" style="width: 18rem;">
                                       <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
                                           <div class="card-body">
                                               <h5 class="card-title">Warranty</h5>
@@ -1356,7 +1362,7 @@
                                               </div>
                                         </div>
                                     </div>
-                                    <div class="card me-2" style="width: 18rem;">
+                                    <div class="card me-2  mb-2" style="width: 18rem;">
                                       <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
                                           <div class="card-body">
                                               <h5 class="card-title">Manual</h5>
@@ -1368,8 +1374,8 @@
                                               </div>
                                         </div>
                                     </div>
-                                    <div class="card me-2" style="width: 18rem;">
-                                      <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
+                                    <div class="card me-2  mb-2" style="width: 18rem;">
+                                      <i class="fa-4x fa-file-pdf fa-solid text-danger"></i>
                                           <div class="card-body">
                                               <h5 class="card-title">Extended Warranty</h5>
                                               <p class="card-text">Extended Warranty 3 years</p>
@@ -1397,6 +1403,100 @@
         </div>
       </div>
       <div class="fade offcanvas-backdrop show d-none"></div>
+      <!-- pop up start -->
+      <div class="modal fade" id="staticBackdrop" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Transfer Asset</h5>
+                  <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Location</label>
+                          <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                          <select class="form-control">
+                              <option> ---- </option>
+                              <option> Conference Room </option>
+                              <option> Accounts </option>
+                          </select>
+                      </div>
+                        <div class="col-lg-4 col-md-12">
+                            <label class="col-form-label  pe-0">Issued To</label>
+                            <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                            <select class="form-control">
+                                <option> ---- </option>
+                                <option> User 1 </option>
+                                <option> User 2 </option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <label class="col-form-label  pe-0">Issued Date</label>
+                            <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <label class="col-form-label  pe-0">Issued Time</label>
+                            <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <label class="col-form-label  pe-0">Exp. Return Date</label>
+                            <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <label class="col-form-label  pe-0">Exp. Return Time</label>
+                            <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <label class="col-form-label  pe-0">Remarks</label>
+                            <textarea  class="form-control form-control-sm" name="assetid"> </textarea>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Transfer</button>
+                </div>
+              </div>
+          </div>
+      </div>
+      <!-- pop up ends-->
+      <!-- pop up start -->
+      <div class="modal fade" id="receivingscreen" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Receive Asset</h5>
+                <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Received Date</label>
+                          <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                      </div>
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Received Time</label>
+                          <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                      </div>
+                      <div class="col-lg-6 col-md-12">
+                          <label class="col-form-label  pe-0">Remarks</label>
+                          <textarea  class="form-control form-control-sm" name="assetid"> </textarea>
+                      </div>
+                  </div>
+                  
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Transfer</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop up ends-->
       <footer class="footer">
         <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io">Bootstrap Admin Template</a> © 2022 creativeLabs.</div>
         <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
