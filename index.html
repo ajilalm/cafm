@@ -1278,53 +1278,79 @@
                     <div class="card-header">Asset Management</div>
                     <div class="card-body">
                         <div class="col-md-12 mb-2">
-                            <form class="row row-cols-lg-auto g-3 align-items-center">
-                                          <div class="col-md-4 col-lg-3">
-                                              <div class="photo-div">
-                                                <a class="capture-photo"><i class="fa fa-camera"></i></a>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-12 col-lg-9">
-                                              <div class="row">
-                                                <div class="col-lg-4 col-md-12">
-                                                  <label class="col-form-label  pe-0">Asset Id</label>
-                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Attachments</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-coreui-toggle="pill" data-coreui-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">History</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-disabled-tab" data-coreui-toggle="pill" data-coreui-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                  <form class="row row-cols-lg-auto g-3 align-items-center">
+                                                <div class="col-md-4 col-lg-3">
+                                                    <div class="photo-div">
+                                                      <a class="capture-photo"><i class="fa fa-camera"></i></a>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-4 col-md-12">
-                                                  <label class="col-form-label  pe-0">Asset Name</label>
-                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
-                                                </div>
-                                                <div class="col-lg-4 col-md-12">
-                                                  <label class="col-form-label  pe-0">Asset Type</label>
-                                                  <select  class="form-control form-control-sm" name="status">   
-                                                      <option> ---- </option>  
-                                                      <option> Electronics </option>   
-                                                      <option> Vehicle </option>    
-                                                  </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-12">
-                                                  <label class="col-form-label pe-0">Status</label>
-                                                  <select  class="form-control form-control-sm" name="status">   
-                                                      <option> ---- </option>  
-                                                      <option> Available </option>   
-                                                      <option> Repair </option>    
-                                                  </select>
-                                                </div>
-                                                <div class="col-lg-4 col-md-12">
-                                                  <label class="col-form-label pe-0">Current Location</label>
-                                                  <select  class="form-control form-control-sm" name="status">   
-                                                      <option> N/A </option>  
-                                                      <option> Developer Room </option>   
-                                                      <option> Support Room </option>    
-                                                  </select>
-                                                </div>
+                                                <div class="col-md-12 col-lg-9">
+                                                    <div class="row">
+                                                      <div class="col-lg-4 col-md-12">
+                                                        <label class="col-form-label  pe-0">Asset Id</label>
+                                                        <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-12">
+                                                        <label class="col-form-label  pe-0">Asset Name</label>
+                                                        <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-12">
+                                                        <label class="col-form-label  pe-0">Asset Type</label>
+                                                        <select  class="form-control form-control-sm" name="status">   
+                                                            <option> ---- </option>  
+                                                            <option> Electronics </option>   
+                                                            <option> Vehicle </option>    
+                                                        </select>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-12">
+                                                        <label class="col-form-label pe-0">Status</label>
+                                                        <select  class="form-control form-control-sm" name="status">   
+                                                            <option> ---- </option>  
+                                                            <option> Available </option>   
+                                                            <option> Repair </option>    
+                                                        </select>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-12">
+                                                        <label class="col-form-label pe-0">Current Location</label>
+                                                        <select  class="form-control form-control-sm" name="status">   
+                                                            <option> N/A </option>  
+                                                            <option> Developer Room </option>   
+                                                            <option> Support Room </option>    
+                                                        </select>
+                                                      </div>
 
-                                              </div>
+                                                    </div>
+                                                    
+                                                </div>
                                               
-                                          </div>
-                                        
-                                
-                            </form>
+                                      
+                                  </form>
+                              </div>
+                              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                  warranty related papers
+                              </div>
+                              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                  history - location/users/maintenance
+                              </div>
+                              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                          </div>
+
                           
                         </div>
                     </div>
