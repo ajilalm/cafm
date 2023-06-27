@@ -1301,91 +1301,163 @@
                           <div class="tab-content" id="pills-tabContent">
                               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                                   <form class="row row-cols-lg-auto g-3 align-items-center">
-                                                <div class="col-md-4 col-lg-3">
-                                                    <div class="photo-div">
-                                                      <a class="capture-photo"><i class="fa fa-camera"></i></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 col-lg-9">
-                                                    <div class="row">
-                                                      <div class="col-lg-4 col-md-12">
-                                                        <label class="col-form-label  pe-0">Asset Id</label>
-                                                        <input type="text"  class="form-control form-control-sm" name="assetid" />      
-                                                      </div>
-                                                      <div class="col-lg-4 col-md-12">
-                                                        <label class="col-form-label  pe-0">Asset Name</label>
-                                                        <input type="text"  class="form-control form-control-sm" name="assetid" />      
-                                                      </div>
-                                                      <div class="col-lg-4 col-md-12">
-                                                        <label class="col-form-label  pe-0">Asset Type</label>
-                                                        <select  class="form-control form-control-sm" name="status">   
-                                                            <option> ---- </option>  
-                                                            <option> Electronics </option>   
-                                                            <option> Vehicle </option>    
-                                                        </select>
-                                                      </div>
-                                                      <div class="col-lg-4 col-md-12">
-                                                        <label class="col-form-label pe-0">Status</label>
-                                                        <select  class="form-control form-control-sm" name="status">   
-                                                            <option> ---- </option>  
-                                                            <option> Available </option>   
-                                                            <option> Repair </option>    
-                                                        </select>
-                                                      </div>
-                                                      <div class="col-lg-4 col-md-12">
-                                                        <label class="col-form-label pe-0">Current Location</label>
-                                                        <select  class="form-control form-control-sm" name="status">   
-                                                            <option> N/A </option>  
-                                                            <option> Developer Room </option>   
-                                                            <option> Support Room </option>    
-                                                        </select>
-                                                      </div>
+                                      <div class="col-md-4 col-lg-3">
+                                          <div class="photo-div">
+                                            <a class="capture-photo"><i class="fa fa-camera"></i></a>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12 col-lg-9">
+                                          <div class="row">
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label  pe-0">Asset Id</label>
+                                              <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label  pe-0">Asset Name</label>
+                                              <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label  pe-0">Asset Type</label>
+                                              <select  class="form-control form-control-sm" name="status">   
+                                                  <option> ---- </option>  
+                                                  <option> Electronics </option>   
+                                                  <option> Vehicle </option>    
+                                              </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label pe-0">Status</label>
+                                              <select  class="form-control form-control-sm" name="status">   
+                                                  <option> ---- </option>  
+                                                  <option> Available </option>   
+                                                  <option> Repair </option>    
+                                              </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label pe-0">Current Location</label>
+                                              <select  class="form-control form-control-sm" name="status">   
+                                                  <option> N/A </option>  
+                                                  <option> Developer Room </option>   
+                                                  <option> Support Room </option>    
+                                              </select>
+                                            </div>
 
-                                                    </div>
-                                                    
-                                                </div>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="col-md-4 col-lg-4">
+                                          <div class="row">
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Purchase Amount</label>
+                                                  <input type="number"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Purchase Date</label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Warranty Till </label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Guarantee Till</label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
                                               
+                                          </div>
+                                      </div>  
+                                      <div class="col-md-4 col-lg-4">
+                                          <div class="row">
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Vendor</label>
+                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Unique No.1</label>
+                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Unique No.2</label>
+                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Guarantee Till</label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              
+                                          </div>
+                                    </div>        
                                       
                                   </form>
                               </div>
                               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                                   <div class="row">
-                                    <div class="card me-2 mb-2" style="width: 18rem;">
-                                      <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
-                                          <div class="card-body">
-                                              <h5 class="card-title">Warranty</h5>
-                                              <p class="card-text">Battery Warranty Details</p>
-                                              <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                      <div class="col-lg-3 col-md-4">
+                                          <div class="row">
+                                              <div class="col-lg-12 col-md-12">
+                                                  <label class="col-form-label  pe-0">Document Type</label>
+                                                  <select class="form-control form-control-sm" name="assetid">      
+                                                      <option>---</option> 
+                                                      <option>Warranty</option> 
+                                                      <option>Extended Warranty</option> 
+                                                      <option>Rc</option>
+                                                  </select>
                                               </div>
-                                        </div>
-                                    </div>
-                                    <div class="card me-2  mb-2" style="width: 18rem;">
-                                      <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
-                                          <div class="card-body">
-                                              <h5 class="card-title">Manual</h5>
-                                              <p class="card-text">Asset manual</p>
-                                              <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                              <div class="col-lg-12 col-md-12">
+                                                  <label class="col-form-label  pe-0">Upload File</label>
+                                                  <input type="file"  class="form-control form-control-sm" name="assetid" />      
                                               </div>
-                                        </div>
-                                    </div>
-                                    <div class="card me-2  mb-2" style="width: 18rem;">
-                                      <i class="fa-4x fa-file-pdf fa-solid text-danger"></i>
-                                          <div class="card-body">
-                                              <h5 class="card-title">Extended Warranty</h5>
-                                              <p class="card-text">Extended Warranty 3 years</p>
-                                              <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
-                                                <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                              <div class="col-lg-12 col-md-12">
+                                                  <label class="col-form-label  pe-0">Remarks</label>
+                                                  <textarea class="form-control form-control-sm" name="assetid">
+                                                  </textarea>      
                                               </div>
-                                        </div>
-                                    </div>
+                                              <div class="col-lg-12 col-md-12">
+                                                  <button class="btn btn-info col-auto">Cancel</button>  
+                                                  <button class="btn btn-info col-auto">Submit</button>   
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-9 col-md-8">
+                                          <div class="row">
+                                              <div class="card me-2 mb-2" style="width: 18rem;">
+                                                  <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Warranty</h5>
+                                                      <p class="card-text">Battery Warranty Details</p>
+                                                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                              <div class="card me-2  mb-2" style="width: 18rem;">
+                                                  <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Manual</h5>
+                                                      <p class="card-text">Asset manual</p>
+                                                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                              <div class="card me-2  mb-2" style="width: 18rem;">
+                                                  <i class="fa-4x fa-file-pdf fa-solid text-danger"></i>
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Extended Warranty</h5>
+                                                      <p class="card-text">Extended Warranty 3 years</p>
+                                                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    
                                   </div>
                               </div>
                               <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
