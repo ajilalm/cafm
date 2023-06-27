@@ -1,7 +1,7 @@
 const pieChart = new Chart(document.getElementById('canvas-5'), {
     type: 'pie',
     data: {
-      labels: ['Red', 'Active', 'Yellow'],
+      labels: ['Repair', 'Available', 'Active'],
       datasets: [{
         data: [300, 50, 100],
         backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
@@ -23,13 +23,15 @@ const barChart = new Chart(document.getElementById('canvas-2'), {
         borderColor: 'rgba(220, 220, 220, 0.8)',
         highlightFill: 'rgba(220, 220, 220, 0.75)',
         highlightStroke: 'rgba(220, 220, 220, 1)',
-        data: [10, 0, 2,7,5, 2,1]
+        data: [10, 0, 2,7,5, 2,1],
+        label:'Work Orders'
       }, {
         backgroundColor: 'rgba(151, 187, 205, 0.5)',
         borderColor: 'rgba(151, 187, 205, 0.8)',
         highlightFill: 'rgba(151, 187, 205, 0.75)',
         highlightStroke: 'rgba(151, 187, 205, 1)',
-        data: [8,2, 2,7,5, 0, 3]
+        data: [8,2, 2,7,5, 0, 3],
+        label:'Work Completed'
       }]
     },
     options: {
@@ -37,3 +39,17 @@ const barChart = new Chart(document.getElementById('canvas-2'), {
     }
   });
   
+const assettypechart = new Chart(document.getElementById('canvas-10'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Vehicle', 'Electronics', 'Mobile','Power Supply'],
+      datasets: [{
+        data: [280, 50, 100,70],
+        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#0c7607'],
+        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#0c7607']
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
