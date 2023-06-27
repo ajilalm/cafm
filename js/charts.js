@@ -35,7 +35,6 @@ const lineChart = new Chart(document.getElementById('canvas-1'), {
     responsive: true
   }
 });
-
 // eslint-disable-next-line no-unused-vars
 const barChart = new Chart(document.getElementById('canvas-2'), {
   type: 'bar',

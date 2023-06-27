@@ -24,7 +24,7 @@ const cardChart1 = new Chart(document.getElementById('card-chart1'), {
   data: {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [{
-      label: 'My First dataset',
+      label: 'Maintenance Activity',
       backgroundColor: 'transparent',
       borderColor: 'rgba(255,255,255,.55)',
       pointBackgroundColor: coreui.Utils.getStyle('--cui-primary'),
