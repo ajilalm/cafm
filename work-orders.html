@@ -343,47 +343,35 @@
                 <label class="btn btn-outline-primary btn-sm" for="btnradio3">High</label>
             </div>     
         </div>
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-6">
             <label class="col-form-label  pe-0">File</label>
             <input type="file"  class="form-control form-control-sm" name="assetid" />      
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
+        
+        <div class="col-lg-4 col-md-6">
+          <label for="inputState" class="form-label">Location</label>
+          <select id="inputState" class="form-select-sm form-select">
             <option selected>Choose...</option>
             <option>...</option>
           </select>
         </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
+        <div class="col-lg-4 col-md-6">
+            <label for="inputState" class="form-label">Assigned Team</label>
+            <select id="inputState" class="form-select-sm form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
         </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
+        <div class="col-lg-4 col-md-6">
+            <label for="inputState" class="form-label">Assigned User</label>
+            <select id="inputState" class="form-select-sm form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
         </div>
+        
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
@@ -497,11 +485,79 @@
       <div class="body flex-grow-1 px-3">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-auto ms-auto">
-                    <a class="btn btn-secondary" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()">
-                        <i class="fa fa-plus"></i> New Work Order
-                    </a>
-                  </div>
+                <div class="card pt-2">
+                    
+                    <div class="col-auto ms-auto">
+                        <a class="btn btn-secondary" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()">
+                            <i class="fa fa-plus"></i> New Work Order
+                        </a>
+                    </div>
+                    <div class="table-responsive mt-2">
+                        <table class="table">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Order Id</th>
+                                    <th>Asset Id</th>
+                                    <th>Asset Name</th>
+                                    <th>Title</th>
+                                    <th>Status</th>
+                                    <th>Priority</th>
+                                    <th>Assigned To</th>
+                                    <th>Location</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>W2023JUNE0056</td>
+                                    <td>M00012</td>
+                                    <td>Smart Phone</td>
+                                    <td>Display Broken</td>
+                                    <td><span class="badge bg-success ms-auto">Available</span></td>
+                                    <td>Low</td>
+                                    <td>User1</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <svg class="icon">
+                                                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                            </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
+                                                <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>W2023JUNE0012</td>
+                                    <td>M00013</td>
+                                    <td>Laptop</td>
+                                    <td>keyboard Not working</td>
+                                    <td><span class="badge bg-success ms-auto">In Use</span></td>
+                                    <td>Medium</td>
+                                    <td>User1</td>
+                                    <td></td>
+                                    <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <svg class="icon">
+                                            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
+                                            <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#receivingscreen">Receive</a>
+                                            <a class="dropdown-item" href="#">Edit</a>
+                                            <a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                    </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
           
           <!-- /.row-->
