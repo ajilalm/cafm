@@ -8,7 +8,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CAFM | Floor</title>
+    <title>CAFM | Rooms</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -402,7 +402,7 @@
                         <!-- if breadcrumb is single--><span>Space Management</span>
                       </li>
                       <li class="breadcrumb-item">
-                        <!-- if breadcrumb is single--><span>Floor</span>
+                        <!-- if breadcrumb is single--><span>Room</span>
                       </li>
                   </ol>
               </nav>
@@ -412,15 +412,15 @@
         <div class="container-fluid">
             
             <div class="card mb-4">
-                <div class="card-header">Floor Details</div>
+                <div class="card-header">Room Details</div>
                 <div class="card-body">
                     <form class="row row-cols-lg-auto g-3 align-items-center mb-2">
                         <div class="col-12">
                           <select class="form-select" id="inlineFormSelectPref">
                             <option selected>Choose...</option>
-                            <option value="1">In Use</option>
-                            <option value="2">Rent</option>
-                            <option value="3">Vacant</option>
+                            <option value="1">Office</option>
+                            <option value="2">Toilet</option>
+                            <option value="3">Canteen</option>
                           </select>
                         </div>
                         <div class="col-12">
@@ -431,7 +431,7 @@
                         </div>
                         <div class="col-auto ms-auto">
                           <a class="btn btn-secondary" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">
-                              <i class="fa fa-plus"></i> Add new Floor
+                              <i class="fa fa-plus"></i> Add new Room
                           </a>
                         </div>
                     </form>
@@ -441,19 +441,21 @@
                                 <tr>
                                     <th>Code</th>
                                     <th>Name</th>
-                                    <th>Level</th>
-                                    <th>Service Status</th>
+                                    <th>Use</th>
+                                    <th>Floor</th>
                                     <th>Building</th>
+                                    <th>Net Area</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>G00001</td>
-                                    <td>Ground Floor</td>
-                                    <td>0</td>
-                                    <td>Operative</td>
+                                    <td>IOT</td>
+                                    <td>Office</td>
+                                    <td>Developers</td>
                                     <td>SAIT</td>
+                                    <td>30</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -470,10 +472,11 @@
                                 </tr>
                                 <tr>
                                     <td>F00013</td>
+                                    <td>Developer</td>
+                                    <td>Office</td>
                                     <td>Developers </td>
-                                    <td>1</td>
-                                    <td></td>
                                     <td>SAIT</td>
+                                    <td>60</td>
                                     <td>
                                     <div class="dropdown">
                                         <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -489,11 +492,12 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>R00012</td>
-                                    <td>Flat</td>
-                                    <td>12</td>
-                                    <td></td>
-                                    <td>HLR</td>  
+                                    <td>F00013</td>
+                                    <td>Admin</td>
+                                    <td>Office</td>
+                                    <td>Developers </td>
+                                    <td>SAIT</td>
+                                    <td>10</td>
                                     <td>
                                     <div class="dropdown">
                                         <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -521,26 +525,26 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Floor Details</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Room Details</h5>
                         <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Floor Id</label>
+                                <label class="col-form-label  pe-0">Room Code</label>
                                 <input type="text"  class="form-control form-control-sm" name="assetid" /> 
                             </div>
                             <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Floor Name</label>
+                                <label class="col-form-label  pe-0">Room Name</label>
                                 <input type="text"  class="form-control form-control-sm" name="assetid" /> 
                             </div>
                             <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Service Status</label>
+                                <label class="col-form-label  pe-0">Use</label>
                                 <select class="form-select-sm form-select">
                                     <option> ---- </option>
-                                    <option> In Use </option>
-                                    <option> Rent   </option>
-                                    <option> Vacant </option>
+                                    <option>Office </option>
+                                    <option>Toilet   </option>
+                                    <option>Canteen </option>
                                 </select>
                             </div>
                             <div class="col-lg-4 col-md-12">
@@ -550,6 +554,33 @@
                                     <option> 	SA Building </option>
                                     <option> SAIT   </option>
                                     <option> Flat </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <label class="col-form-label  pe-0">Floor</label>
+                                <select class="form-select-sm form-select">
+                                    <option> ---- </option>
+                                    <option>Ground Floors </option>
+                                    <option>Developers   </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <label class="col-form-label  pe-0">Condition</label>
+                                <select class="form-select-sm form-select">
+                                    <option> ---- </option>
+                                    <option>Excellent</option>
+                                    <option>Good</option>
+                                    <option>Maintenance Required</option>
+                                    <option>Poor</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <label class="col-form-label  pe-0">Criticality</label>
+                                <select class="form-select-sm form-select">
+                                    <option> ---- </option>
+                                    <option>Low</option>
+                                    <option>MOderate</option>
+                                    <option>High</option>
                                 </select>
                             </div>
                             
