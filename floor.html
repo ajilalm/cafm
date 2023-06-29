@@ -8,7 +8,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CAFM | Building</title>
+    <title>CAFM | Floor</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -412,7 +412,7 @@
         <div class="container-fluid">
             
             <div class="card mb-4">
-                <div class="card-header">Building Details</div>
+                <div class="card-header">Floor Details</div>
                 <div class="card-body">
                     <form class="row row-cols-lg-auto g-3 align-items-center mb-2">
                         <div class="col-12">
@@ -431,7 +431,7 @@
                         </div>
                         <div class="col-auto ms-auto">
                           <a class="btn btn-secondary" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">
-                              <i class="fa fa-plus"></i> Add new Building
+                              <i class="fa fa-plus"></i> Add new Floor
                           </a>
                         </div>
                     </form>
@@ -441,23 +441,19 @@
                                 <tr>
                                     <th>Code</th>
                                     <th>Name</th>
-                                    <th>Main Use</th>
-                                    <th>Availability</th>
-                                    <th>Address</th>
-                                    <th>Zip Code</th>
-                                    <th>City</th>
+                                    <th>Level</th>
+                                    <th>Service Status</th>
+                                    <th>Building</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>M00012</td>
-                                    <td>SA Building</td>
-                                    <td>Office</td>
-                                    <td>In Use</td>
-                                    <td>User1</td>
-                                    <td>673601</td>
-                                    <td>Kozhikode</td>
+                                    <td>G00001</td>
+                                    <td>Ground Floor</td>
+                                    <td>0</td>
+                                    <td>Operative</td>
+                                    <td>SAIT</td>
                                     <td>
                                         <div class="dropdown">
                                             <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -473,13 +469,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>M00013</td>
-                                    <td>SAIT </td>
-                                    <td>Office</td>
-                                    <td>Rent</td>
-                                    <td>muscott</td>
-                                    <td>673601</td>
-                                    <td>Kozhikode</td>
+                                    <td>F00013</td>
+                                    <td>Developers </td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td>SAIT</td>
                                     <td>
                                     <div class="dropdown">
                                         <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -495,13 +489,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>MN0017</td>
+                                    <td>R00012</td>
                                     <td>Flat</td>
-                                    <td>Residential</td>
-                                    <td>Vacant</td>
-                                    <td>HLR</td>
-                                    <td>673601</td>
-                                    <td>Banglore</td>
+                                    <td>12</td>
+                                    <td></td>
+                                    <td>HLR</td>  
                                     <td>
                                     <div class="dropdown">
                                         <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -529,42 +521,22 @@
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Building Details</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Floor Details</h5>
                         <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Building Id</label>
+                                <label class="col-form-label  pe-0">Floor Id</label>
                                 <input type="text"  class="form-control form-control-sm" name="assetid" /> 
                             </div>
                             <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Building Name</label>
+                                <label class="col-form-label  pe-0">Floor Name</label>
                                 <input type="text"  class="form-control form-control-sm" name="assetid" /> 
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Main Use</label>
-                                <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
-                                <select class="form-control">
-                                    <option> ---- </option>
-                                    <option> Commercial </option>
-                                    <option> Office </option>
-                                    <option> Residential </option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Availability</label>
-                                <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
-                                <select class="form-control">
-                                    <option> ---- </option>
-                                    <option> In Use </option>
-                                    <option> Rent </option>
-                                    <option> Vacant </option>
-                                </select>
                             </div>
                             <div class="col-lg-4 col-md-12">
                                 <label class="col-form-label  pe-0">Service Status</label>
-                                <select class="form-control">
+                                <select class="form-select-sm form-select">
                                     <option> ---- </option>
                                     <option> In Use </option>
                                     <option> Rent   </option>
@@ -572,25 +544,13 @@
                                 </select>
                             </div>
                             <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Address</label>
-                                <input type="text"  class="form-control form-control-sm" name="assetid" /> 
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">City</label>
-                                <select class="form-control">
+                                <label class="col-form-label  pe-0">Building</label>
+                                <select class="form-select form-select-sm">
                                     <option> ---- </option>
-                                    <option> In Use </option>
-                                    <option> Rent   </option>
-                                    <option> Vacant </option>
+                                    <option> 	SA Building </option>
+                                    <option> SAIT   </option>
+                                    <option> Flat </option>
                                 </select>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Zip Code</label>
-                                <input type="text"  class="form-control form-control-sm" name="assetid" /> 
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <label class="col-form-label  pe-0">Location Url</label>
-                                <input type="text"  class="form-control form-control-sm" name="assetid" /> 
                             </div>
                             
                         </div>
