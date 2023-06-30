@@ -53,3 +53,35 @@ const assettypechart = new Chart(document.getElementById('canvas-10'), {
       responsive: true
     }
   });
+  var ctx2 = document.getElementById("dashboardChart2");
+    var dashboardChart2 = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            labels: ["Purple","red","orange","green",],
+            datasets: [{
+                label: '# of Votes',
+                data: [5,6,7,8],
+                backgroundColor: ["Purple","red","orange","green",],
+                borderColor: [
+                    'rgba(255, 255, 255 ,1)',
+                ],
+                // borderWidth: 2
+            }]
+
+        },
+        options: {
+          rotation: -90,
+          circumference: 180,
+        }
+        // options: {
+        //     rotation: 1 * Math.PI,/** This is where you need to work out where 89% is */
+        //     circumference: 1 * Math.PI,/** put in a much smaller amount  so it does not take up an entire semi circle */
+        //     legend: {
+        //         display: false
+        //     },
+        //     tooltip: {
+        //         enabled: false
+        //     },
+        //     cutoutPercentage: 95
+        // }
+    });

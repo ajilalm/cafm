@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v4.2.2
+* @link https://coreui.io
+* Copyright (c) 2022 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+<!-- Breadcrumb-->
 <html lang="en">
   <head>
     <base href="./">
@@ -8,7 +16,7 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>CAFM | Dashboard</title>
+    <title>CAFM</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -70,43 +78,119 @@
             <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
         </div>
         <ul class="sidebar-nav metismenu" data-coreui="navigation" data-simplebar="">
-          <li class="nav-item"><a class="nav-link" href="dashboard.html">
+          <li class="nav-item"><a class="nav-link" href="index.html">
               <svg class="nav-icon">
                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
-              </svg> Dashboard</a></li>
-          
-          
+              </svg> Dashboard 4</a></li>
+          <li class="nav-title">Theme</li>
+          <li class="nav-item"><a class="nav-link" href="colors.html">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
+              </svg> Colors</a></li>
+          <li class="nav-item"><a class="nav-link" href="typography.html">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
+              </svg> Typography</a></li>
+          <li class="nav-title">Asset Management</li>
           <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
               <svg class="nav-icon">
                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
               </svg> Asset Management</a>
             <ul class="nav-group-items">
-              <li class="nav-item"><a class="nav-link" href="asset-list.html"><span class="nav-icon"></span> Assets</a></li>
-              <li class="nav-item"><a class="nav-link" href="asset-tracking.html"><span class="nav-icon"></span> Tracking</a></li>
-              <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Maintenance</a></li>
-            </ul>
-          </li>
-          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
-            <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
-            </svg> Facility Management</a>
-            <ul class="nav-group-items">
-              <li class="nav-item"><a class="nav-link" href="work-orders.html"><span class="nav-icon"></span> Work Orders</a></li>
-              <li class="nav-item"><a class="nav-link" href="asset-tracking.html"><span class="nav-icon"></span> Tracking</a></li>
+              <li class="nav-item"><a class="nav-link" href="base/accordion.html"><span class="nav-icon"></span> Assets</a></li>
+              <li class="nav-item"><a class="nav-link" href="base/breadcrumb.html"><span class="nav-icon"></span> Tracking</a></li>
               <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Maintenance</a></li>
             </ul>
           </li>
           <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
               <svg class="nav-icon">
-                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
-              </svg> Space Management</a>
-          <ul class="nav-group-items">
-              <li class="nav-item"><a class="nav-link" href="reservation.html"><span class="nav-icon"></span> Reservation</a></li>
-              <li class="nav-item"><a class="nav-link" href="building.html"><span class="nav-icon"></span> Building</a></li>
-              <li class="nav-item"><a class="nav-link" href="floor.html"><span class="nav-icon"></span> Floor</a></li>
-              <li class="nav-item"><a class="nav-link" href="rooms.html"><span class="nav-icon"></span> Rooms</a></li>
-          </ul>
-        </li>
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
+              </svg> Buttons</a>
+            <ul class="nav-group-items">
+              <li class="nav-item"><a class="nav-link" href="buttons/buttons.html"><span class="nav-icon"></span> Buttons</a></li>
+              <li class="nav-item"><a class="nav-link" href="buttons/button-group.html"><span class="nav-icon"></span> Buttons Group</a></li>
+              <li class="nav-item"><a class="nav-link" href="buttons/dropdowns.html"><span class="nav-icon"></span> Dropdowns</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="charts.html">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-chart-pie"></use>
+              </svg> Charts</a></li>
+          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-notes"></use>
+              </svg> Forms</a>
+            <ul class="nav-group-items">
+              <li class="nav-item"><a class="nav-link" href="forms/form-control.html"> Form Control</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/select.html"> Select</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/checks-radios.html"> Checks and radios</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/range.html"> Range</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/input-group.html"> Input group</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/floating-labels.html"> Floating labels</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/layout.html"> Layout</a></li>
+              <li class="nav-item"><a class="nav-link" href="forms/validation.html"> Validation</a></li>
+            </ul>
+          </li>
+          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+              </svg> Icons</a>
+            <ul class="nav-group-items">
+              <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-free.html"> CoreUI Icons<span class="badge badge-sm bg-success ms-auto">Free</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> CoreUI Icons - Brand</a></li>
+              <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-flag.html"> CoreUI Icons - Flag</a></li>
+            </ul>
+          </li>
+          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+              </svg> Notifications</a>
+            <ul class="nav-group-items">
+              <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span> Alerts</a></li>
+              <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span> Badge</a></li>
+              <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"></span> Modals</a></li>
+              <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"></span> Toasts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="widgets.html">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calculator"></use>
+              </svg> Widgets<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+          <li class="nav-divider"></li>
+          <li class="nav-title">Extras</li>
+          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-star"></use>
+              </svg> Pages</a>
+            <ul class="nav-group-items">
+              <li class="nav-item"><a class="nav-link" href="login.html" target="_top">
+                  <svg class="nav-icon">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  </svg> Login</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html" target="_top">
+                  <svg class="nav-icon">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                  </svg> Register</a></li>
+              <li class="nav-item"><a class="nav-link" href="404.html" target="_top">
+                  <svg class="nav-icon">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+                  </svg> Error 404</a></li>
+              <li class="nav-item"><a class="nav-link" href="500.html" target="_top">
+                  <svg class="nav-icon">
+                    <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bug"></use>
+                  </svg> Error 500</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mt-auto"><a class="nav-link" href="https://coreui.io/docs/templates/installation/" target="_blank">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-description"></use>
+              </svg> Docs</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+              <svg class="nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-layers"></use>
+              </svg> Try CoreUI
+              <div class="fw-semibold">PRO</div>
+            </a></li>
         </ul>
     </div>
     <div class="sidebar sidebar-light customeoff sidebar-lg sidebar-end sidebar-overlaid hide" id="aside">
@@ -455,8 +539,9 @@
               <nav aria-label="breadcrumb">
                   <ol class="breadcrumb my-0 ms-2">
                       <li class="breadcrumb-item">
-                        <!-- if breadcrumb is single--><span>Dashboard</span>
+                        <!-- if breadcrumb is single--><span>Home</span>
                       </li>
+                      <li class="breadcrumb-item active"><span>Dashboard</span></li>
                   </ol>
               </nav>
           </div>
@@ -464,185 +549,6 @@
       <div class="body flex-grow-1 px-3">
         <div class="container-fluid">
           <div class="row">
-              <div class="col-lg-3">
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <canvas id="dashboardChart1" width="400" height="400"></canvas>
-              </div>
-              <div class="col-lg-3">
-                  <div class="card">
-                      <canvas id="dashboardChart2" width="400" height="400"></canvas>
-                  </div>
-                
-              </div>
-              <div class="col-lg-3">
-                <canvas id="dashboardChart3" width="400" height="400"></canvas>
-                
-              </div>
-
-          </div>
-
-          <div class="row">
-            <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-header">
-                    Asset Maintenance
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-5" height="100"></canvas>
-                    </div>
-                  </div>
-
-                </div>
-                  
-            </div>
-            <!-- chart2 -->
-            <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-header">
-                    Asset Category
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-10" height="100"></canvas>
-                    </div>
-                  </div>
-
-                </div>
-                
-            </div>
-            <!-- chart2 -->
-            <div class="col-lg-3">
-              <div class="card">
-                <div class="card-header">
-                    Pending Work Orders
-                </div>
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      
-                      <span class="badge bg-primary rounded-pill">14</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Vehicle
-                      <span class="badge bg-primary rounded-pill">2</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Mobile
-                      <span class="badge bg-primary rounded-pill">1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Furniture
-                      <span class="badge bg-primary rounded-pill">1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Plant
-                      <span class="badge bg-primary rounded-pill">1</span>
-                    </li>
-                  </ul>
-                
-                </div>
-
-              </div>
-              
-            </div>
-            <!-- chart2 -->
-            <div class="col-lg-3">
-              <div class="card">
-                <div class="card-header">
-                    Summary
-                </div>
-                <div class="card-body">
-                    <div class="timeline-item">
-                      <!--begin::Label-->
-                      <span class="timeline-label fw-bold text-gray-800 fs-6">16:50</span>
-                      <!--end::Label-->
-      
-                      <!--begin::Badge-->
-                      <span class="timeline-badge">
-                          <i class="fa fa-genderless text-primary fa-1"></i>
-                      </span>
-                      <!--end::Badge-->
-      
-                      <!--begin::Text-->
-                      <div class="timeline-content fw-mormal text-muted ps-3">
-                           New Asset - Monitor was added
-                      </div>
-                      <!--end::Text-->
-                    </div>
-                    <div class="timeline-item">
-                      <!--begin::Label-->
-                      <span class="timeline-label fw-bold text-gray-800 fs-6">16:45</span>
-                      <!--end::Label-->
-      
-                      <!--begin::Badge-->
-                      <span class="timeline-badge">
-                          <i class="fa fa-genderless text-warning fa-1"></i>
-                      </span>
-                      <!--end::Badge-->
-      
-                      <!--begin::Text-->
-                      <div class="timeline-content fw-mormal text-muted ps-3">
-                          Inverter - Service Request
-                      </div>
-                      <!--end::Text-->
-                    </div>
-                    <div class="timeline-item">
-                      <!--begin::Label-->
-                      <span class="timeline-label fw-bold text-gray-800 fs-6">15:00</span>
-                      <!--end::Label-->
-      
-                      <!--begin::Badge-->
-                      <span class="timeline-badge">
-                          <i class="fa fa-genderless text-danger fa-1"></i>
-                      </span>
-                      <!--end::Badge-->
-      
-                      <!--begin::Text-->
-                      <div class="timeline-content fw-mormal text-muted ps-3">
-                          Printer - Damage
-                      </div>
-                      <!--end::Text-->
-                    </div>
-                    <div class="timeline-item">
-                      <!--begin::Label-->
-                      <span class="timeline-label fw-bold text-gray-800 fs-6">13:00</span>
-                      <!--end::Label-->
-      
-                      <!--begin::Badge-->
-                      <span class="timeline-badge">
-                          <i class="fa fa-genderless text-success fa-1"></i>
-                      </span>
-                      <!--end::Badge-->
-      
-                      <!--begin::Text-->
-                      <div class="timeline-content fw-mormal text-muted ps-3">
-                          Available - Vehicle
-                      </div>
-                      <!--end::Text-->
-                    </div>
-                </div>
-
-              </div>
-              
-            </div>
-            <!-- chart3 -->
-            <div class="mt-2 col-lg-6">
-              <div class="card">
-                <div class="card-header">
-                    Work Orders Created vs Completed
-                </div>
-                <div class="card-body">
-                  <div class="c-chart-wrapper">
-                    <canvas id="canvas-2" height="100vh"></canvas>
-                  </div>
-                </div>
-
-              </div>
-                
-          </div>
             <div class="col-sm-6 col-lg-3">
               <div class="card mb-4 text-white bg-primary">
                 <div class="card-body pb-0 d-flex justify-content-between align-items-start">
@@ -651,7 +557,7 @@
                         <svg class="icon">
                           <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-bottom"></use>
                         </svg>)</span></div>
-                    <div>Maintenance Acivity</div>
+                    <div>Users</div>
                   </div>
                   <div class="dropdown">
                     <button class="btn btn-transparent text-white p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1258,7 +1164,334 @@
             <!-- /.col-->
           </div>
           <!-- /.row-->
-         
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">Asset Details</div>
+                    <div class="card-body">
+                        <div class="col-md-12 mb-2">
+                          <form class="row row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12">
+                              <select class="form-select" id="inlineFormSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="1">Mobile Device</option>
+                                <option value="2">Vehicle</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <div class="input-group">
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search">
+                                <div class="input-group-text"><i class="fa fa-search"></i></div>
+                              </div>
+                            </div>
+                            <div class="col-auto ms-auto">
+                              <a class="btn btn-secondary" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()">
+                                  <i class="fa fa-plus"></i> Add new Asset
+                              </a>
+                            </div>
+                          </form>
+                          
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table">
+                              <thead class="table-dark">
+                                  <tr>
+                                      <th>Asset Image</th>
+                                      <th>Asset Id</th>
+                                      <th>Description</th>
+                                      <th>Asset Type</th>
+                                      <th>Current Location</th>
+                                      <th>Assigned To</th>
+                                      <th>Status</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td><img src="https://fdn.gsmarena.com/imgroot/news/23/02/oneplus-11-buds-pro-2-india-price-sale-date/-1200w5/gsmarena_001.jpg" width=100></td>
+                                      <td>M00012</td>
+                                      <td>Smart Phone</td>
+                                      <td>Mobile Device</td>
+                                      <td>N/A</td>
+                                      <td>User1</td>
+                                      <td><span class="badge bg-success ms-auto">Available</span> </td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <svg class="icon">
+                                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                                </svg>
+                                              </button>
+                                              <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
+                                                  <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a>
+                                                  <a class="dropdown-item" href="#">Edit</a>
+                                                  <a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYzfMNfD7DzVwErHzi0nz70I05sa4oxk1qEJ90rfp&s" width=100></td>
+                                      <td>M00013</td>
+                                      <td>Laptop</td>
+                                      <td>Mobile Device</td>
+                                      <td>Support Room</td>
+                                      <td>User1</td>
+                                      <td><span class="badge bg-success ms-auto">Available</span> </td>
+                                      <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                              <svg class="icon">
+                                                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
+                                              <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#receivingscreen">Receive</a>
+                                              <a class="dropdown-item" href="#">Edit</a>
+                                              <a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                        </div>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRto60ZWP6xuGidvyXT5fDmD9IQG72PsmMp0mAEyNQNyOrrQIC88n7qmZLhaK9GvQ7phWzFDYWcCYbT8z8pKw7WnGPcZan7N_yvsTfQ0emIz2SWkDPKWX7Krkugfuv46JQmhw&usqp=CAc" width=100></td>
+                                      <td>MN0017</td>
+                                      <td>Monitor</td>
+                                      <td>Electronics</td>
+                                      <td>Developer Room</td>
+                                      <td>User B</td>
+                                      <td><span class="badge bg-danger ms-auto">Repair</span> </td>
+                                      <td>
+                                        <div class="dropdown">
+                                            <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                              <svg class="icon">
+                                                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped=""><a class="dropdown-item" href="#">Info</a><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                        </div>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- /.row-->
+          <div class="row">
+              <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">Asset Management</div>
+                    <div class="card-body">
+                        <div class="col-md-12 mb-2">
+                          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-coreui-toggle="pill" data-coreui-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-coreui-toggle="pill" data-coreui-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Attachments</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-coreui-toggle="pill" data-coreui-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">History</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-disabled-tab" data-coreui-toggle="pill" data-coreui-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                  <form class="row row-cols-lg-auto g-3 align-items-center">
+                                      <div class="col-md-4 col-lg-3">
+                                          <div class="photo-div">
+                                            <a class="capture-photo"><i class="fa fa-camera"></i></a>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-12 col-lg-9">
+                                          <div class="row">
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label  pe-0">Asset Id</label>
+                                              <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label  pe-0">Asset Name</label>
+                                              <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label  pe-0">Asset Type</label>
+                                              <select  class="form-control form-control-sm" name="status">   
+                                                  <option> ---- </option>  
+                                                  <option> Electronics </option>   
+                                                  <option> Vehicle </option>    
+                                              </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label pe-0">Status</label>
+                                              <select  class="form-control form-control-sm" name="status">   
+                                                  <option> ---- </option>  
+                                                  <option> Available </option>   
+                                                  <option> Repair </option>    
+                                              </select>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                              <label class="col-form-label pe-0">Current Location</label>
+                                              <select  class="form-control form-control-sm" name="status">   
+                                                  <option> N/A </option>  
+                                                  <option> Developer Room </option>   
+                                                  <option> Support Room </option>    
+                                              </select>
+                                            </div>
+
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="col-md-4 col-lg-4">
+                                          <div class="row">
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Purchase Amount</label>
+                                                  <input type="number"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Purchase Date</label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Warranty Till </label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Guarantee Till</label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              
+                                          </div>
+                                      </div>  
+                                      <div class="col-md-4 col-lg-4">
+                                          <div class="row">
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Vendor</label>
+                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Unique No.1</label>
+                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Unique No.2</label>
+                                                  <input type="text"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-6 col-md-12">
+                                                  <label class="col-form-label  pe-0">Guarantee Till</label>
+                                                  <input type="date"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              
+                                          </div>
+                                    </div>        
+                                      
+                                  </form>
+                              </div>
+                              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                  <div class="row">
+                                      <div class="col-lg-3 col-md-4">
+                                          <div class="row">
+                                              <div class="col-lg-12 col-md-12">
+                                                  <label class="col-form-label  pe-0">Document Type</label>
+                                                  <select class="form-control form-control-sm" name="assetid">      
+                                                      <option>---</option> 
+                                                      <option>Warranty</option> 
+                                                      <option>Extended Warranty</option> 
+                                                      <option>Rc</option>
+                                                  </select>
+                                              </div>
+                                              <div class="col-lg-12 col-md-12">
+                                                  <label class="col-form-label  pe-0">Upload File</label>
+                                                  <input type="file"  class="form-control form-control-sm" name="assetid" />      
+                                              </div>
+                                              <div class="col-lg-12 col-md-12">
+                                                  <label class="col-form-label  pe-0">Remarks</label>
+                                                  <textarea class="form-control form-control-sm" name="assetid">
+                                                  </textarea>      
+                                              </div>
+                                              <div class="col-lg-12 col-md-12">
+                                                  <button class="btn btn-info col-auto">Cancel</button>  
+                                                  <button class="btn btn-info col-auto">Submit</button>   
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-9 col-md-8">
+                                          <div class="row">
+                                              <div class="card me-2 mb-2" style="width: 18rem;">
+                                                  <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Warranty</h5>
+                                                      <p class="card-text">Battery Warranty Details</p>
+                                                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                              <div class="card me-2  mb-2" style="width: 18rem;">
+                                                  <i class="fa-4x fa-file-pdf fa-solid text-center text-danger"></i>
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Manual</h5>
+                                                      <p class="card-text">Asset manual</p>
+                                                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                                      </div>
+                                                </div>
+                                              </div>
+                                              <div class="card me-2  mb-2" style="width: 18rem;">
+                                                  <i class="fa-4x fa-file-pdf fa-solid text-danger"></i>
+                                                  <div class="card-body">
+                                                      <h5 class="card-title">Extended Warranty</h5>
+                                                      <p class="card-text">Extended Warranty 3 years</p>
+                                                      <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-eye"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-pencil"></i></button>
+                                                        <button type="button" class="btn btn-outline-primary"><i class="fa fa-trash"></i></button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    
+                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                <div class="me-2  mb-4">
+                                  <i class="fa fa-2x fa-truck text-primary"></i>
+                                  <span class="ms-1">26/06/2023</span>
+                                  <div class="card ms-5">
+                                    Issued to user 1
+                                   </div>
+                                </div>
+                                <div class="me-2  mb-4">
+                                  <i class="fa fa-tools  fa-2x text-danger"></i>
+                                  <span class="ms-1">24/06/2023</span>
+                                  <div class="card ms-5">
+                                    Given for repair
+                                   </div>
+                                </div>
+                                <div class="me-2  mb-4">
+                                  <i class="fa fa-hand-holding-box  fa-2x text-success"></i>
+                                  <span class="ms-1">24/06/2023</span>
+                                  <div class="card ms-5">
+                                    Received From user 2
+                                   </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                          </div>
+
+                          
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
       <div class="fade offcanvas-backdrop show d-none"></div>
@@ -1362,7 +1595,6 @@
       </footer>
     </div>
     <!-- CoreUI and necessary plugins-->
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
     <script src="vendors/simplebar/js/simplebar.min.js"></script>
     <!-- Plugins and scripts required by this view-->
@@ -1372,7 +1604,7 @@
     <script src="vendors/fullcalendar/index.global.js"></script>
     <script src="vendors/fullcalendar/fullcalendar-example.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script>
       if (document.body.classList.contains('dark-theme')) {
         var element = document.getElementById('btn-dark-theme');
