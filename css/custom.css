@@ -90,3 +90,7 @@
     transform: rotate(45deg);
     width: 90px;
 }
+span.avatar img{
+    width:2em;
+    border-radius: 50%;
+}
