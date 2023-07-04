@@ -40,6 +40,7 @@ const barChart = new Chart(document.getElementById('canvas-2'), {
   });
   
 const assettypechart = new Chart(document.getElementById('canvas-10'), {
+  
     type: 'doughnut',
     data: {
       labels: ['Vehicle', 'Electronics', 'Mobile','Power Supply'],
@@ -57,11 +58,11 @@ const assettypechart = new Chart(document.getElementById('canvas-10'), {
     var dashboardChart2 = new Chart(ctx2, {
         type: 'doughnut',
         data: {
-            labels: ["Purple","red","orange","green",],
+            labels: ["Ok","Poor","Bad"],
             datasets: [{
                 label: '# of Votes',
-                data: [5,6,7,8],
-                backgroundColor: ["Purple","red","orange","green",],
+                data: [15,5,6],
+                backgroundColor: ["#9bbc5b","#3a6d7a","#FF6384"],
                 borderColor: [
                     'rgba(255, 255, 255 ,1)',
                 ],

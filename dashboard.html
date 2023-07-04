@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/all.min.css" /> 
     <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/light.min.css" />  
     <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/thin.min.css" />  
+    <link rel="stylesheet" type="text/css" href="css/apexcharts.css" />  
     <!-- <link href="css/sidebarpro.css" rel="stylesheet"> -->
     <!-- We use those styles to show code examples, you should remove them in your application.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
@@ -735,7 +736,12 @@
               </div> -->
               <div class="col-lg-3">
                   <div class="card">
-                      <canvas id="dashboardChart2" width="400" height="400"></canvas>
+                      <div class="card-header">
+                          Asset Status
+                      </div>
+                      <div class="card-body">
+                          <canvas id="dashboardChart2" width="400" height="200"></canvas>
+                      </div>
                   </div>
                 
               </div>
@@ -768,6 +774,44 @@
 
                   </div>
                   
+              </div>
+              <div class="col-lg-3">
+                  <div class="card">
+                      <div class="">
+                          <div class="c-chart-wrapper d-flex align-items-center flex-wrap">
+                              <div id="canvas-11" style="height:100px"></div>
+                              <div class="ms-1"> <p class="mb-1 text-muted">Impressions</p><h5 class="fw-semibold mb-0">9,903</h5> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card mt-1">
+                      <div class="">
+                          <div class="c-chart-wrapper d-flex align-items-center flex-wrap">
+                              <div id="canvas-12" style="height:100px"></div>
+                              <div class="ms-1"> <p class="mb-1 text-muted">Impressions</p><h5 class="fw-semibold mb-0">9,903</h5> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card mt-1">
+                      <div class="">
+                          <div class="c-chart-wrapper d-flex align-items-center flex-wrap">
+                              <div id="canvas-13" style="height:100px"></div>
+                              <div class="ms-1"> <p class="mb-1 text-muted">Impressions</p><h5 class="fw-semibold mb-0">9,903</h5> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card mt-1">
+                      <div class="">
+                          <div class="c-chart-wrapper d-flex align-items-center flex-wrap">
+                              <div id="canvas-14" style="height:100px"></div>
+                              <div class="ms-1"> <p class="mb-1 text-muted">Impressions</p><h5 class="fw-semibold mb-0">9,903</h5> 
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
 
           </div>
@@ -1414,12 +1458,14 @@
     <script src="vendors/simplebar/js/simplebar.min.js"></script>
     <!-- Plugins and scripts required by this view-->
     <script src="vendors/chart.js/js/chart.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
     <script src="vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
     <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
     <script src="vendors/fullcalendar/index.global.js"></script>
     <script src="vendors/fullcalendar/fullcalendar-example.js"></script>
     <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/custom-chart2.js"></script>
     <script>
       if (document.body.classList.contains('dark-theme')) {
         var element = document.getElementById('btn-dark-theme');
