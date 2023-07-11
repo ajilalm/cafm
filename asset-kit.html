@@ -57,6 +57,13 @@
         border-radius: 0;
         position: absolute;
         z-index: 1050;
+        height: auto;
+    }
+    img.zoom{
+        height: 2em ;
+    }
+    span.avatar img{
+        margin-left: 0;
     }
     </style>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
@@ -436,8 +443,8 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="card custom-card team-member-card">
-                                <div class="teammember-cover-image">
+                            <div class="border-start border-start-3 border-start-success card custom-card team-member-card">
+                                <div class="teammember-cover-image ps-2">
                                     <span class="avatar avatar-xl avatar-rounded">
                                         <img class="zoom" title="M00012|Smart Phone" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYzfMNfD7DzVwErHzi0nz70I05sa4oxk1qEJ90rfp&s" width=100>
                                     </span> 
@@ -454,7 +461,7 @@
                                             <p class="mb-0 fw-semibold fs-16 text-truncate"> 
                                                 <a>Travel Kit</a>
                                             </p>
-                                            <p class="mb-0 fs-12 text-muted text-truncate">Assets required during client side visit</p>
+                                            <p class="mb-0 fs-12 text-muted ">Assets required during client side visit</p>
                                         </div>
                                         <div class="dropdown">
                                             <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -462,11 +469,10 @@
                                                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
                                               </svg>
                                             </button>
-                                            <div class="dropdown-menu dropdown-menu-end" style="">
-                                              <a class="dropdown-item" href="asset-details.html">Add</a>
-                                              <a class="dropdown-item" href="asset-details.html">Edit</a>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#addtokit">Modify</a>
                                               <!-- <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a> -->
-                                              <a class="dropdown-item text-danger" href="#">Delete</a>
+                                              <a class="dropdown-item text-danger delete-kit" href="#">Delete</a>
                                             </div>
                                         </div>
                                     </div> 
@@ -475,7 +481,62 @@
                                     <div class="btn-list"> 
                                         <div class="btn-list">
                                             <button class="btn btn-sm btn-icon btn-light btn-wave waves-effect waves-light">
-                                                <i class="ri-facebook-line fw-bold"></i> 
+                                                <img src="assets/img/avatars/1.jpg">
+                                            </button> 
+                                            <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
+                                                <i class="ri-twitter-line fw-bold"></i> 
+                                            </button>
+                                            <button class="btn btn-sm btn-icon btn-warning-light btn-wave waves-effect waves-light">
+                                                <i class="ri-instagram-line fw-bold"></i> 
+                                            </button>
+                                            <button class="btn btn-sm btn-icon btn-success-light btn-wave waves-effect waves-light">
+                                                <i class="ri-github-line fw-bold"></i>
+                                            </button> 
+                                            <button class="btn btn-sm btn-icon btn-danger-light btn-wave waves-effect waves-light">
+                                                <i class="ri-youtube-line fw-bold"></i>
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="border-start border-start-3 border-start-danger card custom-card team-member-card">
+                                <div class="teammember-cover-image ps-2">
+                                    <span class="avatar avatar-xl avatar-rounded">
+                                        <img class="zoom" title="M00012|Smart Phone" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRto60ZWP6xuGidvyXT5fDmD9IQG72PsmMp0mAEyNQNyOrrQIC88n7qmZLhaK9GvQ7phWzFDYWcCYbT8z8pKw7WnGPcZan7N_yvsTfQ0emIz2SWkDPKWX7Krkugfuv46JQmhw&usqp=CAc" width=100>
+                                    </span> 
+                                    <a href="javascript:void(0);" class="team-member-star text-warning"> 
+                                        <i class="ri-star-fill fs-16"></i> 
+                                    </a>
+                                </div> 
+                                <div class="card-body p-0"> 
+                                    <div class="d-flex flex-wrap align-item-center mt-sm-0 mt-5 justify-content-between border-bottom border-block-end-dashed p-3">
+                                        <div class="team-member-details flex-fill"> 
+                                            <p class="mb-0 fw-semibold fs-16 text-truncate"> 
+                                                <a>Accounts System</a>
+                                            </p>
+                                            <p class="mb-0 fs-12 text-muted ">Assets used by accounts users</p>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <svg class="icon">
+                                                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                              </svg>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#addtokit">Modify</a>
+                                              <!-- <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a> -->
+                                              <a class="dropdown-item text-danger delete-kit" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div> 
+                                <!-- <div class="card-footer border-block-start-dashed text-center">
+                                    <div class="btn-list"> 
+                                        <div class="btn-list">
+                                            <button class="btn btn-sm btn-icon btn-light btn-wave waves-effect waves-light">
+                                                <img src="assets/img/avatars/1.jpg">
                                             </button> 
                                             <button class="btn btn-sm btn-icon btn-secondary-light btn-wave waves-effect waves-light">
                                                 <i class="ri-twitter-line fw-bold"></i> 
@@ -503,60 +564,74 @@
       </div>
       <div class="fade offcanvas-backdrop show d-none"></div>
       <!-- pop up start -->
-      <div class="modal fade" id="staticBackdrop" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal fade" id="addtokit" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-xl">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Transfer Asset</h5>
+                  <h5 class="modal-title" id="staticBackdropLabel">Kit Modification</h5>
                   <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                      <div class="col-lg-4 col-md-12">
-                          <label class="col-form-label  pe-0">Location</label>
-                          <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
-                          <select class="form-control">
-                              <option> ---- </option>
-                              <option> Conference Room </option>
-                              <option> Accounts </option>
-                          </select>
-                      </div>
-                        <div class="col-lg-4 col-md-12">
-                            <label class="col-form-label  pe-0">Issued To</label>
-                            <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
-                            <select class="form-control">
-                                <option> ---- </option>
-                                <option> User 1 </option>
-                                <option> User 2 </option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <label class="col-form-label  pe-0">Issued Date</label>
-                            <input type="date"  class="form-control form-control-sm" name="assetid" /> 
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <label class="col-form-label  pe-0">Issued Time</label>
-                            <input type="time"  class="form-control form-control-sm" name="assetid" /> 
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <label class="col-form-label  pe-0">Exp. Return Date</label>
-                            <input type="date"  class="form-control form-control-sm" name="assetid" /> 
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <label class="col-form-label  pe-0">Exp. Return Time</label>
-                            <input type="time"  class="form-control form-control-sm" name="assetid" /> 
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <label class="col-form-label  pe-0">Remarks</label>
-                            <textarea  class="form-control form-control-sm" name="assetid"> </textarea>
-                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th></th>
+                                        <th>Asset Image</th>
+                                        <th>Asset Id</th>
+                                        <th>Description</th>
+                                        <th>Asset Type</th>
+                                        <th>Current Location</th>
+                                        <th>Assigned To</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                          <input type="checkbox" checked>
+                                        </td>
+                                        <td><img src="https://fdn.gsmarena.com/imgroot/news/23/02/oneplus-11-buds-pro-2-india-price-sale-date/-1200w5/gsmarena_001.jpg" width=100></td>
+                                        <td>M00012</td>
+                                        <td>Smart Phone</td>
+                                        <td>Mobile Device</td>
+                                        <td>N/A</td>
+                                        <td>User1</td>
+                                        <td><span class="badge bg-success ms-auto">In Store</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYzfMNfD7DzVwErHzi0nz70I05sa4oxk1qEJ90rfp&s" width=100></td>
+                                        <td>M00013</td>
+                                        <td>Laptop</td>
+                                        <td>Mobile Device</td>
+                                        <td>Support Room</td>
+                                        <td>User1</td>
+                                        <td><span class="badge bg-success ms-auto">In Use</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRto60ZWP6xuGidvyXT5fDmD9IQG72PsmMp0mAEyNQNyOrrQIC88n7qmZLhaK9GvQ7phWzFDYWcCYbT8z8pKw7WnGPcZan7N_yvsTfQ0emIz2SWkDPKWX7Krkugfuv46JQmhw&usqp=CAc" width=100></td>
+                                        <td>MN0017</td>
+                                        <td>Monitor</td>
+                                        <td>Electronics</td>
+                                        <td>Developer Room</td>
+                                        <td>User B</td>
+                                        <td><span class="badge bg-danger ms-auto">In Repair</span> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+
                     </div>
-                    
 
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Transfer</button>
+                  <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-sm  btn-primary">Submit</button>
                 </div>
               </div>
           </div>
