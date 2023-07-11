@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/all.min.css" /> 
     <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/light.min.css" />  
     <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/thin.min.css" />  
+    <link rel="stylesheet" type="text/css" href="plugins/sweetalert2/sweetalert2.min.css" />  
     <!-- <link href="css/sidebarpro.css" rel="stylesheet"> -->
     <!-- We use those styles to show code examples, you should remove them in your application.-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
@@ -476,6 +477,7 @@
                           <table class="table">
                               <thead class="table-dark">
                                   <tr>
+                                      <th></th>
                                       <th>Asset Image</th>
                                       <th>Asset Id</th>
                                       <th>Description</th>
@@ -483,72 +485,73 @@
                                       <th>Current Location</th>
                                       <th>Assigned To</th>
                                       <th>Status</th>
-                                      <th></th>
                                   </tr>
                               </thead>
                               <tbody>
                                   <tr>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg class="icon">
+                                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                            </svg>
+                                          </button>
+                                          <div class="dropdown-menu dropdown-menu-end" style="">
+                                            <a class="dropdown-item" href="asset-details.html">Info</a>
+                                            <a class="dropdown-item" href="asset-details.html">Edit</a>
+                                            <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a>
+                                            <a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                        </div>
+                                      </td>
                                       <td><img src="https://fdn.gsmarena.com/imgroot/news/23/02/oneplus-11-buds-pro-2-india-price-sale-date/-1200w5/gsmarena_001.jpg" width=100></td>
                                       <td>M00012</td>
                                       <td>Smart Phone</td>
                                       <td>Mobile Device</td>
                                       <td>N/A</td>
                                       <td>User1</td>
-                                      <td><span class="badge bg-success ms-auto">Available</span> </td>
-                                      <td>
-                                          <div class="dropdown">
-                                              <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                <svg class="icon">
-                                                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
-                                                </svg>
-                                              </button>
-                                              <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
-                                                  <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a>
-                                                  <a class="dropdown-item" href="#">Edit</a>
-                                                  <a class="dropdown-item text-danger" href="#">Delete</a></div>
-                                          </div>
-                                      </td>
+                                      <td><span class="badge bg-success ms-auto">In Store</span> </td>
                                   </tr>
                                   <tr>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg class="icon">
+                                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                            </svg>
+                                          </button>
+                                          <div class="dropdown-menu dropdown-menu-end" style="">
+                                            <a class="dropdown-item" href="#">Info</a>
+                                              <a class="dropdown-item" href="#">Edit</a>
+                                              <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#receivingscreen">Receive</a>
+                                              <a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                        </div>
+                                      </td>
                                       <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYzfMNfD7DzVwErHzi0nz70I05sa4oxk1qEJ90rfp&s" width=100></td>
                                       <td>M00013</td>
                                       <td>Laptop</td>
                                       <td>Mobile Device</td>
                                       <td>Support Room</td>
                                       <td>User1</td>
-                                      <td><span class="badge bg-success ms-auto">Available</span> </td>
-                                      <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                              <svg class="icon">
-                                                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
-                                              </svg>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped="">
-                                              <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#receivingscreen">Receive</a>
-                                              <a class="dropdown-item" href="#">Edit</a>
-                                              <a class="dropdown-item text-danger" href="#">Delete</a></div>
-                                        </div>
-                                      </td>
+                                      <td><span class="badge bg-success ms-auto">In Use</span> </td>
                                   </tr>
                                   <tr>
+                                      <td>
+                                        <div class="dropdown">
+                                          <button class="btn btn-transparent p-0" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <svg class="icon">
+                                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
+                                            </svg>
+                                          </button>
+                                          <div class="dropdown-menu dropdown-menu-end" style=""><a class="dropdown-item" href="#">Info</a><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item text-danger" href="#">Delete</a></div>
+                                        </div>
+                                      </td>
                                       <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRto60ZWP6xuGidvyXT5fDmD9IQG72PsmMp0mAEyNQNyOrrQIC88n7qmZLhaK9GvQ7phWzFDYWcCYbT8z8pKw7WnGPcZan7N_yvsTfQ0emIz2SWkDPKWX7Krkugfuv46JQmhw&usqp=CAc" width=100></td>
                                       <td>MN0017</td>
                                       <td>Monitor</td>
                                       <td>Electronics</td>
                                       <td>Developer Room</td>
                                       <td>User B</td>
-                                      <td><span class="badge bg-danger ms-auto">Repair</span> </td>
-                                      <td>
-                                        <div class="dropdown">
-                                            <button class="btn btn-transparent p-0 dark:text-high-emphasis" type="button" data-coreui-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                              <svg class="icon">
-                                                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-options"></use>
-                                              </svg>
-                                            </button>
-                                            <div class="dropdown-menu dropdown-menu-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-10px, 28px);" data-popper-placement="bottom-end" data-popper-reference-hidden="" data-popper-escaped=""><a class="dropdown-item" href="#">Info</a><a class="dropdown-item" href="#">Edit</a><a class="dropdown-item text-danger" href="#">Delete</a></div>
-                                        </div>
-                                      </td>
+                                      <td><span class="badge bg-danger ms-auto">In Repair</span> </td>
                                   </tr>
                               </tbody>
                           </table>
@@ -668,6 +671,7 @@
     <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
     <script src="vendors/fullcalendar/index.global.js"></script>
     <script src="vendors/fullcalendar/fullcalendar-example.js"></script>
+    <script src="plugins/sweetalert2/sweetalert2.min.js"></script> 
     <script src="js/main.js"></script>
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script>

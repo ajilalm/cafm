@@ -462,7 +462,7 @@
                               <button class="nav-link" id="pills-contact-tab" data-coreui-toggle="pill" data-coreui-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">History</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="pills-disabled-tab" data-coreui-toggle="pill" data-coreui-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
+                              <button class="nav-link" id="pills-summary-tab" data-coreui-toggle="pill" data-coreui-target="#pills-summary" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Summary</button>
                             </li>
                           </ul>
                           <div class="tab-content" id="pills-tabContent">
@@ -470,7 +470,9 @@
                                   <form class="row row-cols-lg-auto g-3 align-items-center">
                                       <div class="col-md-4 col-lg-3">
                                           <div class="photo-div">
-                                            <a class="capture-photo"><i class="fa fa-camera"></i></a>
+                                            <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYzfMNfD7DzVwErHzi0nz70I05sa4oxk1qEJ90rfp&s"> -->
+                                            <a class="capture-photo">
+                                              <i class="fa fa-camera"></i></a>
                                           </div>
                                       </div>
                                       <div class="col-md-12 col-lg-9">
@@ -495,8 +497,11 @@
                                               <label class="col-form-label pe-0">Status</label>
                                               <select  class="form-control form-control-sm" name="status">   
                                                   <option> ---- </option>  
-                                                  <option> Available </option>   
-                                                  <option> Repair </option>    
+                                                  <option> In Use </option>   
+                                                  <option> In Store </option>   
+                                                  <option> In Repair </option>   
+                                                  <option> Expired </option>   
+                                                  <option> Disposed </option>    
                                               </select>
                                             </div>
                                             <div class="col-lg-4 col-md-12">
@@ -553,7 +558,10 @@
                                               
                                           </div>
                                     </div>        
-                                      
+                                    <div class="col-lg-12 col-md-12 mt-2 text-end">
+                                      <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-sm btn-primary">Submit</button>  
+                                    </div>
                                   </form>
                               </div>
                               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
@@ -578,9 +586,9 @@
                                                   <textarea class="form-control form-control-sm" name="assetid">
                                                   </textarea>      
                                               </div>
-                                              <div class="col-lg-12 col-md-12">
-                                                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Transfer</button>  
+                                              <div class="col-lg-12 col-md-12 mt-2 text-end">
+                                                <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-sm btn-primary">Submit</button>  
                                               </div>
                                           </div>
                                       </div>
@@ -650,7 +658,9 @@
                                    </div>
                                 </div>
                               </div>
-                              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+                              <div class="tab-pane fade" id="pills-summary" role="tabpanel" aria-labelledby="pills-summary-tab" tabindex="0">
+                                <div id="canvas-15" style="height:100px"></div>
+                              </div>
                           </div>
 
                           
@@ -769,8 +779,10 @@
     <script src="vendors/@coreui/chartjs/js/coreui-chartjs.js"></script>
     <script src="vendors/@coreui/utils/js/coreui-utils.js"></script>
     <script src="vendors/fullcalendar/index.global.js"></script>
-    <script src="vendors/fullcalendar/fullcalendar-example.js"></script>
+    <script src="vendors/fullcalendar/fullcalendar-example.js"></scrip
     <script src="js/main.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/asset-chart.js"></script>
     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
     <script>
       if (document.body.classList.contains('dark-theme')) {
