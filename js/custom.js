@@ -86,3 +86,24 @@ const assettypechart = new Chart(document.getElementById('canvas-10'), {
         //     cutoutPercentage: 95
         // }
     });
+
+
+$('.delete-kit').on('click',function(){
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: 'No, cancel!',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+      }
+  })
+})

@@ -471,8 +471,9 @@
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#addtokit">Modify</a>
+                                                <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a>
                                               <!-- <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a> -->
-                                              <a class="dropdown-item text-danger delete-kit" href="#">Delete</a>
+                                              <a class="dropdown-item text-danger delete-kit" href="javascript:void(0)">Delete</a>
                                             </div>
                                         </div>
                                     </div> 
@@ -527,7 +528,7 @@
                                             <div class="dropdown-menu dropdown-menu-end">
                                                 <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#addtokit">Modify</a>
                                               <!-- <a class="dropdown-item" href="#" data-coreui-toggle="modal" data-coreui-target="#staticBackdrop">Transfer</a> -->
-                                              <a class="dropdown-item text-danger delete-kit" href="#">Delete</a>
+                                              <a class="dropdown-item text-danger delete-kit" href="javascript:void(0)">Delete</a>
                                             </div>
                                         </div>
                                     </div> 
@@ -638,6 +639,66 @@
       </div>
       <!-- pop up ends-->
       <!-- pop up start -->
+      <div class="modal fade" id="staticBackdrop" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Transfer Asset</h5>
+                <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <label class="col-form-label  pe-0">Location</label>
+                        <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                        <select class="form-control">
+                            <option> ---- </option>
+                            <option> Conference Room </option>
+                            <option> Accounts </option>
+                        </select>
+                    </div>
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Issued To</label>
+                          <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                          <select class="form-control">
+                              <option> ---- </option>
+                              <option> User 1 </option>
+                              <option> User 2 </option>
+                          </select>
+                      </div>
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Issued Date</label>
+                          <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                      </div>
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Issued Time</label>
+                          <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                      </div>
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Exp. Return Date</label>
+                          <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                      </div>
+                      <div class="col-lg-4 col-md-12">
+                          <label class="col-form-label  pe-0">Exp. Return Time</label>
+                          <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                      </div>
+                      <div class="col-lg-6 col-md-12">
+                          <label class="col-form-label  pe-0">Remarks</label>
+                          <textarea  class="form-control form-control-sm" name="assetid"> </textarea>
+                      </div>
+                  </div>
+                  
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Transfer</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop up ends-->
+      <!-- pop up start -->
       <div class="modal fade" id="receivingscreen" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
@@ -687,7 +748,7 @@
     <script src="vendors/fullcalendar/fullcalendar-example.js"></script>
     <script src="plugins/sweetalert2/sweetalert2.min.js"></script> 
     <script src="js/main.js"></script>
-    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script>
       if (document.body.classList.contains('dark-theme')) {
         var element = document.getElementById('btn-dark-theme');
@@ -713,7 +774,26 @@
         }
         document.body.dispatchEvent(event);
       }
-    
+      
+$('.delete-kit').on('click',function(){
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: 'No, cancel!',
+    reverseButtons: true
+  }).then((result) => {
+    if (result.isConfirmed) {
+      swalWithBootstrapButtons.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+      }
+  })
+})
     </script>
 
   </body>
