@@ -494,8 +494,7 @@
                                     <th>Requested Date</th>
                                     <th>Priority</th>
                                     <th>Assigned To</th>
-                                    <th>Location</th>
-                                    <th></th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -523,7 +522,7 @@
                                     <td>12/07/2023</td>
                                     <td>Low</td>
                                     <td>User1</td>
-                                    <td></td>
+                                    <td><span class="badge bg-danger ms-auto">Requested</span></td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -549,7 +548,7 @@
                                     <td>12/07/2023</td>
                                     <td>Medium</td>
                                     <td>User1</td>
-                                    <td></td>
+                                    <td><span class="badge bg-pending ms-auto">Assigned</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -558,6 +557,103 @@
             </div>
           </div>
       </div>
+      <!-- pop up start -->
+      <div class="modal fade" id="staticBackdrop3" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Work Order</h5>
+                <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Date</label>
+                        <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Time</label>
+                        <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Work Status</label>
+                        <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                        <select class="form-control">
+                            <option> ---- </option>
+                            <option> Invalid </option>
+                            <option> Duplicate </option>
+                            <option> Assigned </option>
+                            <option> Cancelled </option>
+                            <option> Hold </option>
+                        </select>
+                    </div>
+                      <div class="col-lg-12 col-md-12">
+                          <label class="col-form-label  pe-0">Remarks</label>
+                          <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                          <textarea class="form-control form-control-sm">
+                          </textarea>
+                      </div>
+                  </div>
+                  
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-sm btn-primary">Submit</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop up ends-->
+    <!-- pop up start -->
+    <div class="modal fade" id="staticBackdrop2" data-coreui-backdrop="static" data-coreui-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Send Out for Repair</h5>
+                <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Date</label>
+                        <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Time</label>
+                        <input type="time"  class="form-control form-control-sm" name="assetid" /> 
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Servicer</label>
+                        <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                        <select class="form-control">
+                            <option> ---- </option>
+                            <option> AMEX </option>
+                            <option> GVG </option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label class="col-form-label  pe-0">Exp. Return Date</label>
+                        <input type="date"  class="form-control form-control-sm" name="assetid" /> 
+                    </div>
+                      <div class="col-lg-12 col-md-12">
+                          <label class="col-form-label  pe-0">Remarks</label>
+                          <!-- <input type="text"  class="form-control form-control-sm" name="assetid" />       -->
+                          <textarea class="form-control form-control-sm">
+                          </textarea>
+                      </div>
+                  </div>
+                  
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary" data-coreui-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-sm btn-primary">Submit</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop up ends-->
       <div class="fade offcanvas-backdrop show d-none"></div>
       <!-- pop up start -->
       
