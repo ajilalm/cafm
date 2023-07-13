@@ -1,5 +1,5 @@
 var options = {
-    series: [70],
+    series: [40],
     chart: {
         height: 120,
         width: 100,
@@ -8,7 +8,7 @@ var options = {
   plotOptions: {
     radialBar: {
       hollow: {
-        size: '70%',
+        size: '40%',
       },
       dataLabels: {
         name: {
@@ -34,7 +34,7 @@ var options = {
   chart11.render();
 
   var options = {
-    series: [50],
+    series: [10],
     chart: {
         height: 120,
         width: 100,
@@ -43,7 +43,7 @@ var options = {
   plotOptions: {
     radialBar: {
       hollow: {
-        size: '70%',
+        size: '10%',
       },
       dataLabels: {
         name: {
@@ -70,7 +70,7 @@ var options = {
 
 
   var options = {
-    series: [20],
+    series: [30],
     colors: ["#FF6384"],
     chart: {
         height: 120,
@@ -80,7 +80,7 @@ var options = {
   plotOptions: {
     radialBar: {
       hollow: {
-        size: '70%',
+        size: '30%',
       },
       dataLabels: {
         name: {

@@ -226,22 +226,15 @@ const mainChart = new Chart(document.getElementById('main-chart'), {
       borderColor: coreui.Utils.getStyle('--cui-info'),
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: [random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200)],
+      data: [random(1, 48), random(1, 48), random(1, 48), random(1, 48), random(1, 48), random(1, 48), random(1, 48)],
       fill: true
     }, {
       label: 'My Second dataset',
       borderColor: coreui.Utils.getStyle('--cui-success'),
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
-      data: [random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200), random(50, 200)]
-    }, {
-      label: 'My Third dataset',
-      borderColor: coreui.Utils.getStyle('--cui-danger'),
-      pointHoverBackgroundColor: '#fff',
-      borderWidth: 1,
-      borderDash: [8, 5],
-      data: [65, 65, 65, 65, 65, 65, 65]
-    }]
+      data:[random(1, 48), random(1, 48), random(1, 48), random(1, 48), random(1, 48), random(1, 48), random(1, 48)]
+    }, ]
   },
   options: {
     maintainAspectRatio: false,
