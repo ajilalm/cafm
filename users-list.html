@@ -334,54 +334,94 @@
     <!-- asset add -->
     <div class="sidebar sidebar-light customeoff sidebar-lg sidebar-end sidebar-overlaid hide" id="aside2">
       <div class="sidebar-header bg-transparent p-0">
-          <h5 class="modal-title" id="#gridSystemModal1">Add New Task</h5>
+          <h5 class="modal-title" id="#gridSystemModal1">Users</h5>
           <button class="sidebar-close" type="button" data-coreui-close="sidebar">
             <i class="fa-regular fa-xmark"></i>
           </button>
       </div>
       <!-- Tab panes-->
       <form class="row g-3 p-2">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+        <div class="col-md-12 col-lg-12 text-center">
+          <div class="photo-div d-inline-block" style="background-img:url('images/vu-tv.jpg')">
+            <img src="assets/img/avatars/1.jpg" class="border border-success w-100" style="border-radius:50%">
+            
+          </div>
+          <div class="d-inline-block">
+            <a class="capture-photo d-block">
+              <i class="fa fa-camera"></i>
+            </a>
+            <a class="capture-photo d-block">
+              <i class="fa fa-upload"></i>
+            </a>
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputEmail4" class="form-label">User Name</label>
+          <input type="text" class="form-control form-control-sm" id="inputEmail4">
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
+        <div class="col-lg-4 col-md-6">
+          <label for="inputEmail4" class="form-label">First Name</label>
+          <input type="text" class="form-control  form-control-sm" id="inputEmail4">
         </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <div class="col-lg-4 col-md-6">
+          <label for="inputEmail4" class="form-label">Last Name</label>
+          <input type="text" class="form-control  form-control-sm" id="inputEmail4">
         </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        <div class="col-lg-4 col-md-6">
+          <label for="inputEmail4" class="form-label">Dob</label>
+          <input type="date" class="form-control  form-control-sm" id="inputEmail4">
         </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
+        <div class="col-lg-4 col-md-6">
+          <label for="inputState" class="form-label">Gender</label>
+          <select id="inputState" class="form-select form-select-sm">
             <option selected>Choose...</option>
             <option>...</option>
           </select>
         </div>
-        <div class="col-md-2">
+        <div class="col-lg-4 col-md-6">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control  form-control-sm" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control  form-control-sm" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control  form-control-sm" id="inputCity">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select form-select-sm">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-md-6">
           <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
+          <input type="text" class="form-control  form-control-sm" id="inputZip">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputEmail4" class="form-label">Mobile</label>
+          <input type="text" class="form-control  form-control-sm" id="inputEmail4">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control  form-control-sm" id="inputEmail4">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <label for="inputState" class="form-label">Department</label>
+          <select id="inputState" class="form-select form-select-sm">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <button class="btn btn-sm h-100 w-25 border-success" title="Create Login/Reset Login"><i class="fa fa-lock"></i></button>
+          <button class="btn btn-sm h-100 w-25 border-danger" title="Lock account"><i class="fa fa-key"></i></button>
         </div>
         <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>
@@ -524,8 +564,8 @@
                         <div class="card contact-action">
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" >  <i class="fa-solid fa-eye"></i>  </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -546,7 +586,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -568,7 +608,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -591,7 +631,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -614,7 +654,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -637,7 +677,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -660,7 +700,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -683,7 +723,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -706,7 +746,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
@@ -729,7 +769,7 @@
                             <div class="card-body">
                                 <div class="contact-overlay pt-3 text-center">
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-eye"></i>  </button>
-                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn"> <i class="fa-solid fa-pencil"></i> </button>
+                                    <button type="button" class="btn btn-sm btn-light contact-hover-btn" onclick="coreui.Sidebar.getInstance(document.querySelector('#aside2')).show()"> <i class="fa-solid fa-pencil"></i> </button>
                                     <button type="button" class="btn btn-sm btn-light contact-hover-btn">  <i class="fa-solid fa-trash"></i>  </button>
                                 </div>
                                 <div class="d-flex flex-fill flex-wrap gap-2">
