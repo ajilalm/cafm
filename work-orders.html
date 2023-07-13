@@ -76,26 +76,67 @@
               </svg> Dashboard</a></li>
           
           
-          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+              <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+                <svg class="nav-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+                </svg> Asset Management</a>
+              <ul class="nav-group-items">
+                <li class="nav-item"><a class="nav-link" href="asset-list.html"><span class="nav-icon"></span> Assets</a></li>
+                <li class="nav-item"><a class="nav-link" href="asset-tracking.html"><span class="nav-icon"></span> Tracking</a></li>
+                <li class="nav-item"><a class="nav-link" href="asset-kit.html"><span class="nav-icon"></span> Kit</a></li>
+              </ul>
+            </li>
+            <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
               <svg class="nav-icon">
                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
-              </svg> Asset Management</a>
-            <ul class="nav-group-items">
-              <li class="nav-item"><a class="nav-link" href="asset-list.html"><span class="nav-icon"></span> Assets</a></li>
-              <li class="nav-item"><a class="nav-link" href="asset-tracking.html"><span class="nav-icon"></span> Tracking</a></li>
-              <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Maintenance</a></li>
-            </ul>
-          </li>
-          <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
-            <svg class="nav-icon">
-              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
-            </svg> Facility Management</a>
-          <ul class="nav-group-items">
-            <li class="nav-item"><a class="nav-link" href="work-orders.html"><span class="nav-icon"></span> Work Orders</a></li>
-            <li class="nav-item"><a class="nav-link" href="asset-tracking.html"><span class="nav-icon"></span> Tracking</a></li>
-            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Maintenance</a></li>
-          </ul>
-        </li>
+              </svg> Workorder Management</a>
+              <ul class="nav-group-items">
+                <li class="nav-item"><a class="nav-link" href="work-orders.html"><span class="nav-icon"></span> Work Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="workorder-assignment.html"><span class="nav-icon"></span> Work Order Assignment</a></li>
+                <li class="nav-item"><a class="nav-link" href="workorder-tracking.html"><span class="nav-icon"></span> Work Order Tracking</a></li>
+              </ul>
+            </li>
+            <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+                <svg class="nav-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-room"></use>
+                </svg> Space Management</a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="reservation.html"><span class="nav-icon"></span> Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="building.html"><span class="nav-icon"></span> Building</a></li>
+                    <li class="nav-item"><a class="nav-link" href="floor.html"><span class="nav-icon"></span> Floor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html"><span class="nav-icon"></span> Rooms</a></li>
+                </ul>
+            </li>
+            <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+                <svg class="nav-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                </svg> Maintenance & Repairs</a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="preventive-maintenance.html"><span class="nav-icon"></span> Preventive Maintenance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reactive-maintenance.html"><span class="nav-icon"></span> Reactive Maintenance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="maintenance-history.html"><span class="nav-icon"></span> Maintenance History</a></li>
+                </ul>
+            </li>
+            <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+                <svg class="nav-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bar-chart"></use>
+                </svg> Reporting and Analytics</a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="newpage.html"><span class="nav-icon"></span> Performance Metrics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trend-analysis.html"><span class="nav-icon"></span> Trend Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="custom-reports.html"><span class="nav-icon"></span> Custom Reports</a></li>
+                </ul>
+            </li>
+            <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+                <svg class="nav-icon">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                </svg> Administration</a>
+                <ul class="nav-group-items">
+                    <li class="nav-item"><a class="nav-link" href="users-list.html"><span class="nav-icon"></span>User Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="settings.html"><span class="nav-icon"></span>Settings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="backup.html"><span class="nav-icon"></span>  Data Backup and Security</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <div class="sidebar sidebar-light customeoff sidebar-lg sidebar-end sidebar-overlaid hide" id="aside">
@@ -301,7 +342,7 @@
       <form class="row g-3 p-2">
         <div class="row">
             <div class="col-lg-6 col-md-6">
-                <div class="card text-center">
+                <div class="card text-center h-100">
                     <i class="fa-regular fa-qrcode fa-4x w-100"></i>
                     <span>Scan QR</span>
                 </div>
@@ -355,7 +396,7 @@
             <option>...</option>
           </select>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <!-- <div class="col-lg-4 col-md-6">
             <label for="inputState" class="form-label">Assigned Team</label>
             <select id="inputState" class="form-select-sm form-select">
               <option selected>Choose...</option>
@@ -368,7 +409,7 @@
               <option selected>Choose...</option>
               <option>...</option>
             </select>
-        </div>
+        </div> -->
         
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Submit</button>
